@@ -6,6 +6,10 @@ A lógica do menu traz uma memória afetiva da minha infância: a escolha das co
 
 ---
 
+## Introdução
+Este documento registra os passos que fiz durante o meu aprendizado independente antes de iniciar minha trajetória em ADS.  
+Está organizado com os arquivos das versões em sequência. Inclui os arquivos com pseudocódigo e três versões que rodam em Python.  
+
 ## A Jornada de Evolução do Software
 
 
@@ -26,11 +30,17 @@ Abaixo, explico as decisões técnicas por trás de cada arquivo:
 *   **Decisão Técnica**: Uso do loop `for` combinado com o método `.items()` para percorrer chaves e valores simultaneamente.
 *   **Controle de Fluxo**: Uso do comando `continue` para reiniciar o menu de escolhas assim que a exibição do catálogo termina.
 
+### Portugol — `pseudocodigo_dragoes.md`
+- Primeira versão escrita em pseudocódigo
+- Documenta a lógica inicial antes da implementação em Python
+- Mostra a transição da ideia para o código real
+
 ---
 
 ## Tecnologias Utilizadas
 *   Python 3.14.6
 *   VS Code (Ambiente de Desenvolvimento)
+*   Git e GitHub (Controle de versões)
 
 ------
 # Estrutura do Diagrama de Casos de Uso
@@ -48,3 +58,29 @@ REGRAS DO SISTEMA (O que acontece nos bastidores):
 * Se a cor existir, o sistema busca os dados no Catálogo (Dicionário).
 * Se a cor não existir, o sistema exibe uma dica nostálgica.
 * 'Sair' encerra a execussão do progrma.
+
+## Fluxograma da Evolução
+
+[ Condicionais] ---> [ Dicionários] ---> [ Catálogo] ---> [ Portugol]
+
+
+## Diagrama de Casos de Uso
+
+**Ator Principal:** Visitante da Galeria  
+
+Visitante
+   ↓
+[Escolher Cor] → [Visualizar Obra]
+   ↓
+[Solicitar Catálogo] → [Sair]
+
+## Aprendizados
+-  Condicionais: prática de `if/elif/else` e manipulação de strings  
+-  Dicionários: organização de dados e atributos extras  
+-  Catálogo: loops, controle de fluxo e interface amigável  
+-  Portugol: lógica inicial e transição para Python  
+
+
+## Conclusão
+Cada versão deste projeto representa não apenas um avanço técnico, mas também um registro da minha jornada criativa.  
+Aprendi que programar é como esculpir: cada detalhe molda a obra final.
